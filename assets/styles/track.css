@@ -1,0 +1,311 @@
+* {
+    font-family: "Beton Condensed Bold", "Kanit", sans-serif;
+    font-size: 100%;
+}
+
+body {
+    
+    background-color: #272727;
+    background-image: linear-gradient(to top left, #022631, #272727, #000000);
+    background-size: cover; /* Optional: Ensures the gradient covers the whole area */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+    margin: 0;
+    box-sizing: border-box;
+    color: #f5f5f5;
+    height: 100%;
+}
+       @media (max-width: 967px) {
+            html {
+                font-size: 100%;
+                /* Adjust the base font size for smaller screens */
+            }
+        }
+        @media (max-width: 768px) {
+            html {
+                font-size: 85%;
+                /* Adjust the base font size for smaller screens */
+            }
+        }
+
+/* X button on Mobile Navigation Menu */
+.fa-times {
+    font-size: 4rem;
+    color: #f5f5f5;
+    padding: 1rem;
+}
+    .fa-times:hover {
+        animation: rotateAnimation 200ms ease-in-out;
+    }
+    /* X Button Rotate Animation */
+    @keyframes rotateAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+.fa-bars {
+    padding: .5rem;
+}
+
+.img {
+    border-radius: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+/* Mobile Nav */
+.mobile-nav {
+    display: flex;
+    padding: .5rem;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+    .mobile-nav div:nth-child(1) {
+        align-items: left;
+        width: 100%;
+        z-index: 2;
+    }
+    .mobile-nav div:nth-child(2) {
+        text-align: right;
+        width: 75%;
+    }
+        .mobile-nav div:nth-child(2) i {
+            text-decoration: none;
+            padding: 2.5rem;
+            padding-top: 0rem;
+            font-size: 2.5rem;
+            color: #f5f5f5;
+        }
+
+/* Full Nav */
+.full-nav {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem;
+    z-index: 200;
+    /* background-image: linear-gradient(to top left, #01475c, #0348af, #008b9d); */
+    background-image: url("https://media.discordapp.net/attachments/1266555496798617610/1294119001391108166/Season_1_Night_Sky_Backdrop.png?ex=67185a3d&is=671708bd&hm=f0ac46a023a060305b1f51fd3b103b0e8d48c1e1119edda343c3f3599393c564&=&format=webp&quality=lossless&width=720&height=253");
+    background-size: cover; /* Optional: Ensures the gradient covers the whole area */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+    padding-bottom: 1rem;
+}
+    .full-nav div:nth-child(1) {
+        align-items: left;
+        
+    }
+        .full-nav div:nth-child(1) img {
+            height: 7.5rem;
+            padding: 0 .5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+        }
+    .full-nav div:nth-child(2) {
+        word-spacing: 1.5rem;
+        text-align: right;
+        font-size: 1.5rem;
+        width: 65%;
+    }
+        .full-nav div:nth-child(2) a {
+            text-decoration: none;
+            color: #f5f5f5;
+            margin-right: 1rem;
+        }
+        .full-nav div:nth-child(2) a:hover {
+            text-decoration: none;
+            color: #f5f5f5;
+        }
+
+/* overlay */
+/* mobile overlay nav */
+
+#overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    z-index: 2;
+}
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+        .overlay-text a {
+            display: block;
+            color: #f5f5f5ea;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 3rem;
+            padding: .5rem 2rem;
+            transition: all 200ms ease-in-out;
+        }
+    .overlay-modes {
+        position: relative;
+        top: -5%;
+        left: 50%;
+        right: auto;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-size: 2.5rem;
+        width: 50%;
+    }
+
+/* This pushes the content of pages from the top to below the navigation bar */
+.start {
+    margin-top: 6.5rem;
+}
+    @media (max-width: 1074px) {
+        .start {
+            margin-top: 2rem;
+        }
+
+        .banner {
+            display: none;
+        }
+    }
+
+.spacer {
+    height: 0.5rem;
+    background-color: #272727;
+}
+
+.background-white {
+    background-image: linear-gradient(to bottom right, #ede6e1, #dfdfdf, #fff4ec);
+}
+
+.background-green {
+    background-image: linear-gradient(to top right, #165c01, #336901, #8d9d00);
+    background-size: cover; /* Optional: Ensures the gradient covers the whole area */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+}
+
+.background-brown {
+    background-image: linear-gradient(to bottom right, #c55103, #69320d, #b35414);
+    background-size: cover; /* Optional: Ensures the gradient covers the whole area */
+    background-repeat: no-repeat; /* Prevents tiling of the background */
+}
+
+.socials {
+    text-decoration: none;
+    font-size: 1.75rem;
+    color: #fff;
+}
+    .socials:hover {
+        color: #8d9d00;
+    }
+.footer-section-nav {
+    word-spacing: .5rem;
+    font-size: 1.25rem;
+}
+    .footer-section-nav a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.25rem;
+    }
+        .footer-section-nav a:hover {
+            color: #8d9d00;
+        }
+
+/* Double Section */
+.double-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: .5rem auto 2rem;
+    max-width: 1200px;
+    color: #fff;
+    justify-items: center;
+    font-size: 1.5rem;
+}
+    .double-section-child {
+        width: 85%;
+        text-align: center;
+        color: #fff;
+        border-radius: 0rem;
+    }
+        @media (max-width: 1000px) {
+            .double-section-child {
+                width: 95%;
+            }
+        }
+        .double-section-child div h2 {
+            text-align: center;
+            font-size: 1.75rem;
+            padding: 0 .25rem;
+        }
+        .double-section-child div p {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0 .25rem;
+        }
+.triple-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: .5rem auto 2rem;
+    max-width: 1200px;
+        color: #fff;
+        justify-items: center;
+        font-size: 1.5rem;
+    }
+    .triple-section img {
+        border-radius: 1rem;
+        width: 95%;
+    }
+    .triple-section-child {
+        width: 90%;
+        text-align: center;
+        color: #fff;
+        border-radius: 0.5rem;
+    }
+        .triple-section-child div p {
+            text-align: center;
+            font-size: 1.25rem;
+            padding: 0 .25rem;
+        }
+        .triple-section-child div h3 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 1rem;
+        }
+        .triple-section-child div h4 {
+            font-size: 1.50rem;
+            font-weight: 600;
+            margin: 1rem;
+        }
+        .triple-section-child div h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1rem;
+        }
+        .triple-section-child div a {
+            padding: .5rem 1.5rem;
+            background-color: #336901;
+            color: #fff;
+            border: none;
+            border-radius: 1.5rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+            align-self: center;
+        }
+            .triple-section-child div a:hover {
+                color: #fff;
+            }
+    @media (max-width: 1075px) {
+        .double-section, .triple-section {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 0.25rem;
+        }
+    }
