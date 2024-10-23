@@ -205,7 +205,7 @@ body {
     color: #fff;
 }
     .socials:hover {
-        color: #8d9d00;
+        color: #117b9b;
     }
 .footer-section-nav {
     word-spacing: .5rem;
@@ -217,7 +217,7 @@ body {
         font-size: 1.25rem;
     }
         .footer-section-nav a:hover {
-            color: #8d9d00;
+            color: #117b9b;
         }
 
 /* Double Section */
@@ -292,7 +292,7 @@ body {
         }
         .triple-section-child div a {
             padding: .5rem 1.5rem;
-            background-color: #336901;
+            background-color: #117b9b;
             color: #fff;
             border: none;
             border-radius: 1.5rem;
